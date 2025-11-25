@@ -3,7 +3,7 @@ layout: project
 title: "Corrosion Behavior of Mild Steel under Various Environmental Conditions"
 date: 2024-11-01
 type: technical
-image: assets/img/projects/project5.jpg
+image: assets/img/projects/proj5.jpeg
 links:
   - name: Guide
     url: mailto:rameshkumarnayak@gmail.com
