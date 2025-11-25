@@ -1,237 +1,113 @@
 # -----------------------------------------------------------------------------
-# Site settings
+# Basic Site Settings
 # -----------------------------------------------------------------------------
 
-title: Krishnadev Pandey
+title: "Krishnadev Pandey"
 first_name: Krishnadev
-middle_name:
 last_name: Pandey
-contact_note: >
-  Feel free to reach out via email for research or collaboration.
 description: >
-  Personal academic website of Krishnadev Pandey. Materials & Metallurgical Engineering, interested in computational materials science, PZT, DFT, and thin-film deposition.
+  Final-year B.Tech. student in Materials & Metallurgical Engineering at MANIT Bhopal.
+  Interested in Piezoelectric Materials, Semiconductor Technology, and Crystal Growth.
+
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the
-  <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
-  Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: materials science, DFT, PZT, thin films, academic website, portfolio
+  © 2025 Krishnadev Pandey. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the
+  <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+
+keywords: materials science, piezoelectricity, PZT, DFT, semiconductor technology
 lang: en
 icon: ⚛️
 
 url: https://krishnadevpandey.github.io
-baseurl: ""   # For user.github.io websites, keep this empty
-last_updated: false
-back_to_top: true
-
-# -----------------------------------------------------------------------------
-# Theme settings
-# -----------------------------------------------------------------------------
-
-repo_theme_light: default
-repo_theme_dark: dark
-repo_trophies:
-  enabled: true
-  theme_light: flat
-  theme_dark: gitdimmed
-
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
+baseurl: ""   # Root site — IMPORTANT
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
-bib_search: true
-max_width: 930px
+search_enabled: false   # disable search box
+posts_in_search: false
+bib_search: false
+
+max_width: 950px
 
 # -----------------------------------------------------------------------------
-# Social Preview Metadata
+# Disable Unwanted Features
 # -----------------------------------------------------------------------------
 
-serve_og_meta: true
-serve_schema_org: true
-og_image:
+enable_google_analytics: false
+enable_progressbar: false
+serve_og_meta: false
+serve_schema_org: false
+enable_project_categories: false
+enable_medium_zoom: false
+enable_math: false
 
-# -----------------------------------------------------------------------------
-# Analytics
-# -----------------------------------------------------------------------------
-
-google_analytics:
-google_site_verification:
-bing_site_verification:
-
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-
-blog_name: blog
-blog_description: personal posts on materials science, research, and more
-permalink: /blog/:year/:title/
-lsi: false
-
+# Remove blog completely
+blog_name: ""
+blog_description: ""
 pagination:
-  enabled: true
-
+  enabled: false
 related_blog_posts:
-  enabled: true
-  max_related: 5
+  enabled: false
 
-# -----------------------------------------------------------------------------
-# Comments (optional)
-# -----------------------------------------------------------------------------
-
+# Remove Giscus comments
 giscus:
   repo:
   repo_id:
-  category: Comments
+  category:
   category_id:
-  mapping: title
-  strict: 1
-  reactions_enabled: 1
-  input_position: bottom
-  dark_theme: dark
-  light_theme: light
-  emit_metadata: 0
-  lang: en
+
+# Disable publications section
+scholar:
+  enable: false
 
 # -----------------------------------------------------------------------------
-# External sources
-# -----------------------------------------------------------------------------
-
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/feed/@krishnadevpandey
-
-# -----------------------------------------------------------------------------
-# Newsletter (optional)
-# -----------------------------------------------------------------------------
-
-newsletter:
-  enabled: false
-  endpoint:
-
-# -----------------------------------------------------------------------------
-# Collections
+# Collections (KEEP ONLY WHAT YOU NEED)
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: true
-  news:
-    defaults:
-      layout: post
-    output: true
   projects:
     output: true
+  courses:
+    output: true
+  cv:
+    output: true
+
+# Disable:
+# - books
+# - news
+# - publications
+# - teaching
+# - people
+# - submenus
+# - repositories
 
 # -----------------------------------------------------------------------------
-# Markdown / Highlighter
+# Pages You Want
 # -----------------------------------------------------------------------------
 
-markdown: kramdown
-highlighter: rouge
+include:
+  - "_pages"
 
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    css_class: "highlight"
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
-
-include: ["_pages", "_scripts"]
-exclude:
-  - bin/
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - INSTALL.md
-  - package.json
-  - package-lock.json
-
-keep_files:
-  - CNAME
-  - .nojekyll
+# -----------------------------------------------------------------------------
+# Plugins (minimum required)
+# -----------------------------------------------------------------------------
 
 plugins:
-  - jekyll-archives-v2
-  - jekyll-email-protect
   - jekyll-feed
-  - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
-  - jekyll-link-attributes
-  - jekyll-minifier
-  - jekyll-paginate-v2
-  - jekyll-regex-replace
-  - jekyll/scholar
-  - jekyll-sitemap
-  - jekyll-tabs
-  - jekyll-terser
-  - jekyll-toc
-  - jekyll-twitter-plugin
   - jemoji
+  - jekyll-sitemap
+  - jekyll-paginate-v2
 
 # -----------------------------------------------------------------------------
-# Jekyll Scholar configuration
+# Look & Feel
 # -----------------------------------------------------------------------------
 
-scholar:
-  last_name: [Pandey]
-  first_name: [Krishnadev, K.]
-  style: apa
-  locale: en
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  bibtex_filters: [latex, smallcaps, superscript]
-  replace_strings: true
-  join_strings: true
-  details_dir: bibliography
-  details_link: Details
-  query: "@*"
-  group_by: year
-  group_order: descending
-
-enable_publication_badges:
-  altmetric: true
-  dimensions: true
-  google_scholar: true
-  inspirehep: false
-
-filtered_bibtex_keywords:
-  [abbr, abstract, additional_info, html, pdf, poster, preview, selected]
-
-max_author_limit: 3
-enable_publication_thumbnails: true
-
-# -----------------------------------------------------------------------------
-# Image settings
-# -----------------------------------------------------------------------------
-
-imagemagick:
-  enabled: true
-  widths: [480, 800, 1400]
-  input_directories: ["assets/img/"]
-  input_formats: [".jpg", ".jpeg", ".png", ".tiff", ".gif"]
-  output_formats:
-    webp: "-quality 85"
-
-lazy_loading_images: true
-
-# -----------------------------------------------------------------------------
-# Optional features
-# -----------------------------------------------------------------------------
-
-enable_math: true
 enable_darkmode: true
-enable_masonry: true
-enable_medium_zoom: true
-enable_project_categories: true
-enable_progressbar: true
+enable_navbar_social: true
+enable_masonry: false
 
+external_links:
+  enabled: true
+  target: _blank
+
+sass:
+  style: compressed
