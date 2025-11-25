@@ -6,4 +6,4 @@ permalink: /cv/
 
 🚀 **Click below to download my CV**
 
-[Download CV](../assets/Krishnadev_MANIT_CV.pdf)
+[Download CV](/assets/pdf/Krishnadev_MANIT_CV.pdf)
