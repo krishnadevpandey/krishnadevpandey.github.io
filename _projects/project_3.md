@@ -3,7 +3,7 @@ layout: project
 title: "Crystal Growth of CdZnTe and Poling of PMN-PT Single Crystals"
 date: 2025-01-01
 type: research
-image: assets/img/projects/project3.jpg
+image: assets/img/projects/proj3.jpeg
 links:
   - name: Guide
     url: mailto:sinha.manish.sspl@gov.in
