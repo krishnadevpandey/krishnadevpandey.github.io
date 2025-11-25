@@ -3,7 +3,7 @@ layout: project
 title: "Mathematical Relation Between Compressive Yield Strength and Hardness"
 date: 2024-04-01
 type: technical
-image: assets/img/projects/project4.jpg
+image: assets/img/projects/proj4.jpeg
 links:
   - name: Guide
     url: https://www.manit.ac.in/content/dr-c-sasikumar
