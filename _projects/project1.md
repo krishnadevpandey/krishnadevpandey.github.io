@@ -3,7 +3,7 @@ layout: project
 title: "Determination of d coefficient and Poling optimization in thin film piezoelectrics"
 date: 2025-07-01
 type: research
-image: assets/img/projects/project1.jpg   # ← replace with your image
+image: assets/img/projects/proj1.jpg
 links:
   - name: Guide
     url: https://www.cense.iisc.ac.in/gayathri-pillai/
