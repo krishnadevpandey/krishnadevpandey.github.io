@@ -70,6 +70,14 @@ collections:
     output: true
   cv:
     output: true
+  posts:
+    output: false
+  publications:
+    output: false
+  news:
+    output: false
+  teaching:
+    output: false
 
 # Disable:
 # - books
