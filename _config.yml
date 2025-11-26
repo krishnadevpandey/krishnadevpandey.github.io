@@ -18,7 +18,7 @@ lang: en
 icon: ⚛️
 
 url: "https://krishnadevpandey.github.io"
-baseurl: "/al-folio"
+baseurl: ""
 
 navbar_fixed: true
 footer_fixed: true
