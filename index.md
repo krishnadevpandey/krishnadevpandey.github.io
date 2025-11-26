@@ -1,7 +1,8 @@
 ---
-layout: about
+layout: home
 title: "Home"
 permalink: /
 ---
 
-{% include about.html %}
+Welcome to my website.
+
